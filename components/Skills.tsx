@@ -5,35 +5,47 @@ import { motion } from 'framer-motion'
 
 const skillCategories = [
   {
-    title: "フロントエンド",
+    title: "プログラミング言語",
     skills: [
-      { name: "React", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "TypeScript", level: 80 },
-      { name: "Tailwind CSS", level: 85 },
+      { name: "Python", level: 2 },
+      { name: "JavaScript", level: 2 },
+      { name: "TypeScript", level: 2 },
+      { name: "Java", level: 2 },
+      { name: "C", level: 1},
+      { name: "C++", level: 1},
+   
     ]
   },
   {
-    title: "バックエンド",
+    title: "フレームワーク",
     skills: [
-      { name: "Node.js", level: 75 },
-      { name: "Express", level: 70 },
-      { name: "MongoDB", level: 65 },
-      { name: "Firebase", level: 80 },
+      { name: "Flutter", level: 2 },
+      { name: "React", level: 2 },
+      { name: "Next.js", level: 2 },
+      { name: "Refine", level: 1 },
+      { name: "Ruby on Rails", level: 1 },
     ]
-  },
+},
   {
     title: "その他",
     skills: [
-      { name: "Git", level: 85 },
-      { name: "UI/UXデザイン", level: 70 },
-      { name: "レスポンシブデザイン", level: 90 },
-      { name: "パフォーマンス最適化", level: 75 },
+      { name: "Git", level: 2 },
+      { name: "Docker", level: 1 },
+      { name: "AWS", level: 1 },
+      { name: "Maya", level: 2 },
+      { name: "Unity", level: 2 },
     ]
   }
 ]
 
 const Skills = () => {
+  // レベル表示のためのラベル
+  const levelLabels: { [key: number]: string } = {
+    1: "初級",
+    2: "中級",
+    3: "上級"
+  }
+
   return (
     <section id="skills" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,7 +62,7 @@ const Skills = () => {
             </span>
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            数年間のWeb開発経験を通じて習得したスキルセットです。
+            専門学校を卒業後、趣味での開発経験を通じて習得したスキルセットです。
             フロントエンド開発を中心に、バックエンド技術も理解しています。
             常に新しい技術を学び、スキルアップに励んでいます。
           </p>
@@ -72,12 +84,12 @@ const Skills = () => {
                   <div key={skillIndex}>
                     <div className="flex justify-between text-sm mb-1">
                       <span className="text-gray-700">{skill.name}</span>
-                      <span className="text-gray-500">{skill.level}%</span>
+                      <span className="text-gray-500">{levelLabels[skill.level]}</span>
                     </div>
                     <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
+                        whileInView={{ width: `${(skill.level / 3) * 100}%` }}
                         viewport={{ once: true }}
                         transition={{ duration: 1, delay: skillIndex * 0.1 + categoryIndex * 0.2 }}
                         className="h-full bg-gradient-to-r from-blue-500 to-purple-600"

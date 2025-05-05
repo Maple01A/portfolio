@@ -6,28 +6,28 @@ import Image from 'next/image'
 
 const projects = [
   {
-    title: "モダンECサイト",
-    description: "Next.js、TypeScript、Tailwind CSSを使用して開発したフルスタックECサイト。ユーザー認証、商品検索、カート機能、決済処理などを実装しました。",
-    image: "/projects/ecommerce.webp",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe API"],
-    liveLink: "https://example.com",
-    sourceLink: "https://github.com/yourusername/ecommerce-site"
-  },
-  {
     title: "タスク管理アプリ",
-    description: "ReactとFirebaseを使用したタスク管理アプリケーション。ドラッグ＆ドロップ機能、フィルタリング、ダークモード対応など、使いやすさを重視したUIを設計しました。",
-    image: "/projects/task-app.webp",
-    tech: ["React", "Firebase", "Redux", "Material UI"],
+    description: "ReactとRuby on Railsを使用したタスク管理アプリケーション。",
+    image: "/images/sample1.jpg",
+    tech: ["React", "Ruby on Rails ", "Vite"],
     liveLink: "https://example.com",
-    sourceLink: "https://github.com/yourusername/task-manager"
+    sourceLink: "https://github.com/Maple01A/react_application_2024"
   },
   {
-    title: "天気予報ダッシュボード",
-    description: "OpenWeather APIを使用したインタラクティブな天気予報アプリ。位置情報に基づいた天気データの表示、5日間予報、アニメーションなど、視覚的に魅力的な機能を実装。",
-    image: "/projects/weather-app.webp",
-    tech: ["React", "JavaScript", "Chart.js", "CSS Modules"],
+    title: "植物管理するアプリ",
+    description: "Flutterフレームワークとバックエンド管理にFirebaseを使用して開発した完全なモバイルアプリ。ユーザー認証、植物の登録削除、メモやイベント機能などを実装しました。",
+    image: "/images/sample1.jpg",
+    tech: ["Flutter", "Dart", "Firebase"],
     liveLink: "https://example.com",
-    sourceLink: "https://github.com/yourusername/weather-dashboard"
+    sourceLink: "https://github.com/Maple01A/flutter_application_2024"
+  },
+  {
+    title: "家計管理アプリ",
+    description: "Flutterフレームワークとバックエンド管理にSupabase、さらにモニタリングにSentryを使用して開発したフルースタックアプリケーション。全体のお金を把握して、管理しすくなるように、予想残高機能などを実装しました",
+    image: "/images/sample1.jpg",
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Sentry"],
+    liveLink: "https://original.dcmtvtkah6483.amplifyapp.com",
+    sourceLink: "https://github.com/Maple01A/balance_application_2025"
   },
 ]
 
@@ -49,7 +49,7 @@ const Projects = () => {
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
             これまでに手がけたプロジェクトの一部をご紹介します。
-            各プロジェクトでは、最新のWeb技術を活用し、ユーザー体験の向上に取り組みました。
+            各プロジェクトでは様々なWeb技術を活用し、学習はもちろん、ユーザー体験の向上にも取り組みました。
           </p>
         </motion.div>
         
@@ -61,36 +61,37 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gray-50 rounded-2xl overflow-hidden shadow-md"
+              className="bg-gray-50 rounded-2xl overflow-hidden shadow-md flex flex-col h-full"
             >
               <div className="aspect-video relative">
                 <div className="absolute inset-0 bg-blue-100 flex items-center justify-center">
-                  {/* プロジェクト画像が用意できたらコメントを解除 */}
-                  {/* <Image
+                  { <Image
                     src={project.image}
                     alt={project.title}
                     fill
                     className="object-cover"
-                  /> */}
+                  /> }
                   <span className="text-gray-500">{project.title}のスクリーンショット</span>
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{project.title}</h3>
-                <p className="text-gray-600 text-sm mb-4">{project.description}</p>
-                
-                <div className="mb-4 flex flex-wrap gap-2">
-                  {project.tech.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="text-xs bg-blue-100 text-blue-700 rounded-full px-3 py-1"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="flex-grow">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">{project.title}</h3>
+                  <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+                  
+                  <div className="mb-4 flex flex-wrap gap-2">
+                    {project.tech.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="text-xs bg-blue-100 text-blue-700 rounded-full px-3 py-1"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
                 
-                <div className="flex space-x-3">
+                <div className="flex space-x-3 mt-4">
                   <a
                     href={project.liveLink}
                     target="_blank"

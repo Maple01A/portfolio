@@ -3,7 +3,6 @@
 import React from 'react'
 import Spotlight from './ui/Spotlight'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
 const Header = () => {
   return (
@@ -19,21 +18,23 @@ const Header = () => {
           >
             <h1 className='text-5xl md:text-7xl font-bold text-gray-800 mb-6'>
               <span className='bg-gradient-to-r from-blue-600 to-purple-700 text-transparent bg-clip-text'>
-                フロントエンド開発者
+                ポートフォリオ
               </span>
             </h1>
             <p className='text-lg text-gray-600 max-w-2xl mx-auto'>
-              クリエイティブなウェブ体験を創造するパッションドリブンのフロントエンド開発者です。
-              モダンなWeb技術を駆使して、革新的なソリューションを提供します。
+              ポートフォリオサイトです。私のスキルやプロジェクトを紹介しています。
             </p>
           </motion.div>
 
           {/* スキルアイコン */}
+          <p className='text-lg text-gray-600 max-w-2xl mx-auto flex justify-center items-center'>
+              このサイトで使用された技術。
+            </p>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className='flex flex-wrap justify-center gap-6 mt-12'
+            className='flex flex-wrap justify-center gap-6 mt-5'
           >
             {['React', 'Next.js', 'TypeScript', 'Tailwind CSS'].map((skill, index) => (
               <div key={index} className='bg-white shadow-md rounded-lg p-4 flex items-center gap-2'>

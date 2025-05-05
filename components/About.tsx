@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
 const About = () => {
   return (
@@ -48,29 +47,24 @@ const About = () => {
             
             <div className="space-y-4 text-gray-600">
               <p>
-                2023年からフロントエンド開発に専念し、モダンなWeb技術を活用したアプリケーション開発に取り組んでいます。
-                ユーザー体験を第一に考えた直感的なインターフェースの設計と実装を得意としています。
+                2024年からフルスタック開発に専念し、新しいWeb技術を活用したアプリケーション開発に取り組んでいます。
+                ユーザーが実際に使用するところまで考えて、直感的なインターフェースや機能を実装しました。
               </p>
               <p>
-                以前はバックエンド開発を担当していたため、フルスタック開発の経験も持っています。この経験を活かし、
-                フロントエンドとバックエンドの連携を考慮した効率的な実装ができます。
+                現在、愛媛大学の植物工場情報システム学研究室に在籍しているため、機械学習やデータセット作成の勉強も取り組んでいます。
+                将来にはAIをアプリに導入したプロジェクト開発に挑戦することを目指しています。
               </p>
               <p>
-                新しい技術を学ぶことに情熱を持ち、常に最新のフロントエンド技術トレンドをキャッチアップしています。
-                チーム開発では円滑なコミュニケーションを大切にし、共同作業を通じて最高の成果物を生み出すことを目指しています。
+                新しい技術を学ぶことに情熱を持ち、アプリ開発技術だけではなく、他分野の技術もキャッチアップしています。
+                また、コミュニケーションを大切にして、チームを大切にするエンジニアを目指しています。
               </p>
             </div>
             
-            <div className="mt-8 grid grid-cols-2 gap-4">
+            <div className="mt-8 grid grid-cols-1 gap-4">
               <div className="bg-white p-4 rounded-lg shadow-md">
                 <h3 className="text-gray-800 font-bold mb-2">学歴</h3>
-                <p className="text-gray-600 text-sm">東京工科大学 情報工学部</p>
-                <p className="text-gray-500 text-xs">2018年 - 2022年</p>
-              </div>
-              <div className="bg-white p-4 rounded-lg shadow-md">
-                <h3 className="text-gray-800 font-bold mb-2">勤務先</h3>
-                <p className="text-gray-600 text-sm">株式会社テックソリューション</p>
-                <p className="text-gray-500 text-xs">2022年 - 現在</p>
+                <p className="text-gray-600 text-sm">愛媛大学農学部食料生産学科植物工場システムコース </p>
+                <p className="text-gray-500 text-xs">2024年 - 2027年に卒業予定</p>
               </div>
             </div>
           </motion.div>

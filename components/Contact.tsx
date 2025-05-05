@@ -57,7 +57,7 @@ const Contact = () => {
             </span>
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            プロジェクトのご相談やお仕事の依頼など、お気軽にお問い合わせください。
+            ご質問などがあれば、お気軽にお問い合わせください。
             できるだけ早くご返信いたします。
           </p>
         </motion.div>
@@ -91,7 +91,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:border-blue-500 transition-colors"
-                  placeholder="ラウ デンドン"
+                  placeholder="名前を入力してください"
                 />
               </div>
               
@@ -105,7 +105,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:border-blue-500 transition-colors"
-                  placeholder="example@example.com"
+                  placeholder="メールアドレスを入力してください"
                 />
               </div>
               
@@ -119,7 +119,7 @@ const Contact = () => {
                   required
                   rows={5}
                   className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:border-blue-500 transition-colors"
-                  placeholder="お問い合わせ内容をご記入ください"
+                  placeholder="お問い合わせ内容を入力してください"
                 ></textarea>
               </div>
               
