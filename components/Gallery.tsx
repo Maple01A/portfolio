@@ -36,12 +36,12 @@ const illustrations: Illustration[] = [
   {
     id: 5,
     title: "作品",
-    image: "/IMG_1425.jpg",
+    image: "/IMG_1972.jpg",
   },
   {
     id: 6,
     title: "作品",
-    image: "/IMG_07682.jpg",
+    image: "/IMG_0768.jpg",
 
   }
 ]
