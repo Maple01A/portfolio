@@ -12,7 +12,7 @@ const skillCategories = [
       { name: "TypeScript", level: 2 },
       { name: "Java", level: 2 },
       { name: "C", level: 1},
-      { name: "C++", level: 1},
+      { name: "C#", level: 1},
    
     ]
   },

@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const About = () => {
   return (
@@ -15,17 +16,13 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="relative"
           >
-            <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden relative shadow-md">
-              {/* プロフィール画像が用意できたらコメントを解除 */}
-              {/* <Image
-                src="/profile.jpg"
+            <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden relative shadow-md m-12">
+              <Image
+                src="/IMG_303911.png"
                 alt="プロフィール写真"
                 fill
                 className="object-cover"
-              /> */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-gray-500 text-lg">プロフィール画像</span>
-              </div>
+              />
             </div>
             
             {/* 装飾要素 */}
@@ -48,23 +45,23 @@ const About = () => {
             <div className="space-y-4 text-gray-600">
               <p>
                 2024年からフルスタック開発に専念し、新しいWeb技術を活用したアプリケーション開発に取り組んでいます。
-                ユーザーが実際に使用するところまで考えて、直感的なインターフェースや機能を実装しました。
+                ユーザーが実際に使用するところまで考えて、直感的なインターフェースや機能に力を入れています。
               </p>
               <p>
                 現在、愛媛大学の植物工場情報システム学研究室に在籍しているため、機械学習やデータセット作成の勉強も取り組んでいます。
-                将来にはAIをアプリに導入したプロジェクト開発に挑戦することを目指しています。
-              </p>
-              <p>
-                新しい技術を学ぶことに情熱を持ち、アプリ開発技術だけではなく、他分野の技術もキャッチアップしています。
-                また、コミュニケーションを大切にして、チームを大切にするエンジニアを目指しています。
+                将来にはAIアプリの開発に挑戦してみたいと思います。
               </p>
             </div>
             
             <div className="mt-8 grid grid-cols-1 gap-4">
               <div className="bg-white p-4 rounded-lg shadow-md">
                 <h3 className="text-gray-800 font-bold mb-2">学歴</h3>
-                <p className="text-gray-600 text-sm">愛媛大学農学部食料生産学科植物工場システムコース </p>
-                <p className="text-gray-500 text-xs">2024年 - 2027年に卒業予定</p>
+                <p className="text-m">大阪日本語教育センター </p>
+                <p className="text-gray-500 text-xs">2021年4月入学- 2022年3月卒業</p>
+                <p className="text-m">読売理工医療福祉専門学校 </p>
+                <p className="text-gray-500 text-xs">2022年4月入学- 2024年3月卒業</p>
+                <p className="text-m">愛媛大学農学部食料生産学科植物工場システムコース </p>
+                <p className="text-gray-500 text-xs">2024年4月入学- 2027年3月卒業予定</p>
               </div>
             </div>
           </motion.div>

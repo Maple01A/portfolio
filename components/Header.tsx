@@ -58,7 +58,7 @@ const Header = () => {
               プロジェクトを見る
             </a>
             <a 
-              href="#contact" 
+              href="mailto:dendounglau@gmail.com?subject=ポートフォリオサイトからのお問い合わせ&body=以下にメッセージを入力してください%0D%0A%0D%0Aお名前：%0D%0Aご連絡先：" 
               className='px-8 py-3 bg-transparent border border-gray-300 hover:bg-gray-100 text-gray-800 rounded-full font-medium transition-colors'
             >
               お問い合わせ

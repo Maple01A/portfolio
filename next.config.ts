@@ -4,9 +4,10 @@ const nextConfig: NextConfig = {
   output: "export",
   images: {
     unoptimized: true,
+    domains: ['placehold.co'], // プレースホルダー画像のドメインを許可
   },
-  basePath: '/portfolio', // GitHubリポジトリ名を指定
-  assetPrefix: '/portfolio', // GitHubリポジトリ名を指定
+  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
 };
 
 export default nextConfig;

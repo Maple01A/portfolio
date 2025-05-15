@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h2 className="text-2xl font-bold text-gray-800">ラウ デンドン</h2>
-            <p className="text-gray-600 mt-2">フロントエンド開発者</p>
+            <p className="text-gray-600 mt-2">フルスタック開発者</p>
           </div>
           
           <nav className="flex flex-wrap gap-x-8 gap-y-4 mb-8 md:mb-0">
