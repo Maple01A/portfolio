@@ -17,6 +17,8 @@ const nextConfig: NextConfig = {
   },
   
   // AWS Amplifyのビルドプロセスでの設定
+  distDir: 'out',
+  
   // GitHub Pages用の設定（必要な場合のみ）
   // basePath: '/portfolio',
   // assetPrefix: '/portfolio',
