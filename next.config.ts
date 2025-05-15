@@ -5,9 +5,17 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
     domains: ['placehold.co'], // プレースホルダー画像のドメインを許可
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        pathname: '/**',
+      },
+    ],
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
+  // AWS Amplifyでのビルドでは、basePath とassetPrefix を削除または空に
+  basePath: '',  // GitHub Pagesでのみ '/portfolio' を使用
+  assetPrefix: '', // GitHub Pagesでのみ '/portfolio' を使用
 };
 
 export default nextConfig;
