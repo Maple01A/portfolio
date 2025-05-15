@@ -89,7 +89,7 @@ const Projects = () => {
                 onClick={() => openModal(project)}
               >
                 {!imageErrors[index] ? (
-                  <Image
+                  <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover absolute inset-0"
