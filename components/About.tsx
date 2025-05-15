@@ -18,7 +18,7 @@ const About = () => {
           >
             <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden relative shadow-md m-12">
               <Image
-                src="/IMG_303911.png"
+                src="/IMG_303911.jpg"
                 alt="プロフィール写真"
                 fill
                 className="object-cover"
