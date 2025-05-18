@@ -24,7 +24,7 @@ const projects = [
     sourceLink: "https://github.com/Maple01A/react_application_2024"
   },
   {
-    title: "植物管理するアプリ",
+    title: "植物管理アプリ",
     description: "FlutterとFirebaseを使用した完全なモバイルアプリ。ユーザー認証、植物の登録削除、メモやイベント機能などを実装しました。",
     image: "/sample2.jpg",
     tech: ["Flutter", "Dart", "Firebase"],
