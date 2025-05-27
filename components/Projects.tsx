@@ -33,7 +33,7 @@ const projects = [
   },
   {
     title: "家計管理アプリ",
-    description: "ReactとSupabaseを使用したフルースタックアプリケーション。全体のお金を束握して、管理しすくなるように、予想残高機能などを実装しました",
+    description: "ReactとSupabaseを使用したフルースタックアプリケーション。全体のお金を把握して、管理しすくなるように、予想残高機能などを実装しました",
     image: "/sample3.jpg",
     tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Sentry"],
     liveLink: "https://original.dcmtvtkah6483.amplifyapp.com",
