@@ -20,7 +20,6 @@ const projects = [
     description: "ReactとRuby on Railsを使用したタスク管理アプリケーション。",
     image: "/sample1.jpg",
     tech: ["React", "Ruby on Rails ", "Vite"],
-    liveLink: "https://example.com",
     sourceLink: "https://github.com/Maple01A/react_application_2024"
   },
   {
@@ -28,7 +27,6 @@ const projects = [
     description: "FlutterとFirebaseを使用した完全なモバイルアプリ。ユーザー認証、植物の登録削除、メモやイベント機能などを実装しました。",
     image: "/sample2.jpg",
     tech: ["Flutter", "Dart", "Firebase"],
-    liveLink: "https://example.com",
     sourceLink: "https://github.com/Maple01A/flutter_application_2024"
   },
   {
