@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -48,14 +48,16 @@ const About = () => {
                 ユーザーが実際に使用するところまで考えて、直感的なインターフェースや機能に力を入れています。
               </p>
               <p>
-                現在、愛媛大学の植物工場情報システム学研究室に在籍しているため、機械学習やデータセット作成の勉強も取り組んでいます。
-                将来にはAIアプリの開発に挑戦してみたいと思います。
+                現在、愛媛大学の植物工場情報システム学研究室に在籍しているため、AIを活用したスマート農業についても勉強を取り組んでいます。
+                将来にはAIの開発に挑戦してみたいと思います。
               </p>
             </div>
             
             <div className="mt-8 grid grid-cols-1 gap-4">
               <div className="bg-white p-4 rounded-lg shadow-md">
                 <h3 className="text-gray-800 font-bold mb-2">学歴</h3>
+                <p className="text-m">タマサート大学政治学部国際関係専攻</p>
+                <p className="text-gray-500 text-xs">2017年8月入学- 2021年1月中退</p>
                 <p className="text-m">大阪日本語教育センター </p>
                 <p className="text-gray-500 text-xs">2021年4月入学- 2022年3月卒業</p>
                 <p className="text-m">読売理工医療福祉専門学校 </p>

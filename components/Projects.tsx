@@ -20,7 +20,7 @@ const projects = [
     description: "ReactとRuby on Railsを使用したタスク管理アプリケーション。",
     image: "/sample1.jpg",
     tech: ["React", "Ruby on Rails ", "Vite"],
-    liveLink: "https://example.com",
+    liveLink: "https://github.com/Maple01A/react_application_2024",
     sourceLink: "https://github.com/Maple01A/react_application_2024"
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     description: "FlutterとFirebaseを使用した完全なモバイルアプリ。ユーザー認証、植物の登録削除、メモやイベント機能などを実装しました。",
     image: "/sample2.jpg",
     tech: ["Flutter", "Dart", "Firebase"],
-    liveLink: "https://example.com",
+    liveLink: "https://drive.google.com/file/d/1JpExUoVTop_HcdlKJjDwXMSK6oVg_rm4/view?usp=drive_link",
     sourceLink: "https://github.com/Maple01A/flutter_application_2024"
   },
   {
@@ -38,6 +38,22 @@ const projects = [
     tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Sentry"],
     liveLink: "https://original.dcmtvtkah6483.amplifyapp.com",
     sourceLink: "https://github.com/Maple01A/balance_application_2025"
+  },
+    {
+    title: "学名クイズアプリ",
+    description: "ReactとExpoを使用した学名クイズアプリケーション。",
+    image: "/sample4.png",
+    tech: ["React", "Expo",],
+    liveLink: "https://main.dh1n1x4zj2mqs.amplifyapp.com/",
+    sourceLink: "https://github.com/Maple01A/react_expo_2025"
+  },
+    {
+    title: "クッキングタイマーアプリ",
+    description: "Flutterを使用したクッキングタイマーアプリケーション。",
+    image: "/sample5.png",
+    tech: ["Flutter"],
+    liveLink: "https://example.com",
+    sourceLink: "https://github.com/Maple01A/flutter_application_2025"
   },
 ]
 
