@@ -20,20 +20,20 @@ const projects = [
     description: "ReactとRuby on Railsを使用したタスク管理アプリケーション。",
     image: "/sample1.jpg",
     tech: ["React", "Ruby on Rails ", "Vite"],
-    liveLink: "https://github.com/Maple01A/react_application_2024",
+    liveLink: "https://example.com",
     sourceLink: "https://github.com/Maple01A/react_application_2024"
   },
   {
-    title: "植物管理するアプリ",
+    title: "植物管理アプリ",
     description: "FlutterとFirebaseを使用した完全なモバイルアプリ。ユーザー認証、植物の登録削除、メモやイベント機能などを実装しました。",
     image: "/sample2.jpg",
     tech: ["Flutter", "Dart", "Firebase"],
-    liveLink: "https://drive.google.com/file/d/1JpExUoVTop_HcdlKJjDwXMSK6oVg_rm4/view?usp=drive_link",
+    liveLink: "https://example.com",
     sourceLink: "https://github.com/Maple01A/flutter_application_2024"
   },
   {
     title: "家計管理アプリ",
-    description: "ReactとSupabaseを使用したフルースタックアプリケーション。全体のお金を束握して、管理しすくなるように、予想残高機能などを実装しました",
+    description: "ReactとSupabaseを使用したフルースタックアプリケーション。全体のお金を把握して、管理しすくなるように、予想残高機能などを実装しました",
     image: "/sample3.jpg",
     tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Sentry"],
     liveLink: "https://original.dcmtvtkah6483.amplifyapp.com",
@@ -86,7 +86,7 @@ const Projects = () => {
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
             これまでに手がけたプロジェクトの一部をご紹介します。
-            各プロジェクトでは様々なWeb技術を活用し、学習はもちろん、ユーザー体験の向上にも取り組みました。
+            各プロジェクトでは様々なWeb技術を活用しました。
           </p>
         </motion.div>
         
