@@ -13,7 +13,7 @@ const skillCategories = [
       { name: "Java", level: 2 },
       { name: "C", level: 1},
       { name: "C#", level: 1},
-   
+      { name: "SQL", level: 2},
     ]
   },
   {
@@ -21,9 +21,10 @@ const skillCategories = [
     skills: [
       { name: "Flutter", level: 2 },
       { name: "React", level: 2 },
+      { name: "Vue", level: 1 },
       { name: "Next.js", level: 2 },
-      { name: "Refine", level: 1 },
       { name: "Ruby on Rails", level: 1 },
+      
     ]
 },
   {

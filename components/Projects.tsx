@@ -28,7 +28,7 @@ const projects = [
     description: "FlutterとFirebaseを使用した完全なモバイルアプリ。ユーザー認証、植物の登録削除、メモやイベント機能などを実装しました。",
     image: "/sample2.jpg",
     tech: ["Flutter", "Dart", "Firebase"],
-    liveLink: "https://example.com",
+    liveLink: "https://drive.google.com/file/d/1ldEd2ycI5-jbYlTvkF3eXuh11n6hielT/view?usp=sharing",
     sourceLink: "https://github.com/Maple01A/flutter_application_2024"
   },
   {
