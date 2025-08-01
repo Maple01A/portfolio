@@ -69,6 +69,11 @@ const Projects = () => {
     setSelectedImage(null);
   }
 
+  // リンクが有効かどうかを確認する関数を追加
+  const isValidLink = (link: string): boolean => {
+    return typeof link === "string" && link.trim() !== "";
+  }
+
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
