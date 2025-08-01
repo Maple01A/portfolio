@@ -20,7 +20,7 @@ const projects = [
     description: "ReactとRuby on Railsを使用したタスク管理アプリケーション。",
     image: "/sample1.jpg",
     tech: ["React", "Ruby on Rails ", "Vite"],
-    liveLink: "https://example.com",
+    liveLink: "",
     sourceLink: "https://github.com/Maple01A/react_application_2024"
   },
   {
@@ -52,7 +52,7 @@ const projects = [
     description: "Flutterを使用したクッキングタイマーアプリケーション。",
     image: "/sample5.png",
     tech: ["Flutter"],
-    liveLink: "https://example.com",
+    liveLink: "",
     sourceLink: "https://github.com/Maple01A/flutter_application_2025"
   },
 ]
@@ -139,14 +139,23 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex space-x-3 mt-4">
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full transition-colors"
-                  >
-                    サイトを見る
-                  </a>
+                  {isValidLink(project.liveLink) ? (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full transition-colors"
+                    >
+                      サイトを見る
+                    </a>
+                  ) : (
+                    <span
+                      className="text-sm bg-gray-400 cursor-not-allowed text-white px-4 py-2 rounded-full"
+                      title="準備中"
+                    >
+                      サイトを見る
+                    </span>
+                  )}
                   <a
                     href={project.sourceLink}
                     target="_blank"
