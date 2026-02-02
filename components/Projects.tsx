@@ -16,12 +16,28 @@ interface Project {
 
 const projects = [
   {
-    title: "タスク管理アプリ",
-    description: "ReactとRuby on Railsを使用したタスク管理アプリケーション。",
-    image: "/sample1.jpg",
-    tech: ["React", "Ruby on Rails ", "Vite"],
-    liveLink: "",
-    sourceLink: "https://github.com/Maple01A/react_application_2024"
+    title: "家計管理アプリ",
+    description: "ReactとSupabaseを使用したアプリケーション。全体のお金を把握して、管理しすくなるように、予想残高機能などを実装しました",
+    image: "/sample3.jpg",
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Sentry"],
+    liveLink: "https://original.dcmtvtkah6483.amplifyapp.com",
+    sourceLink: "https://github.com/Maple01A/balance_application_2025"
+  },
+    {
+    title: "カロリー管理アプリ",
+    description: "ReactとAWS使用したカロリー管理アプリケーション。食事の記録、カロリー計算、目標設定などの機能を実装しました。",
+    image: "/sample6.png",
+    tech: ["React", "Next.js", "TypeScript", "DynamoDB", "Lambda"],
+    liveLink: "https://main.de6f15s05bpln.amplifyapp.com/",
+    sourceLink: "https://github.com/Maple01A/CalorieCaculator"
+  },
+  {
+    title: "学名クイズアプリ",
+    description: "ReactとExpoを使用した学名クイズアプリケーション。",
+    image: "/sample4.png",
+    tech: ["React", "Expo",],
+    liveLink: "https://main.dh1n1x4zj2mqs.amplifyapp.com/",
+    sourceLink: "https://github.com/Maple01A/react_expo_2025"
   },
   {
     title: "植物管理アプリ",
@@ -30,22 +46,6 @@ const projects = [
     tech: ["Flutter", "Dart", "Firebase"],
     liveLink: "https://drive.google.com/file/d/1ldEd2ycI5-jbYlTvkF3eXuh11n6hielT/view?usp=sharing",
     sourceLink: "https://github.com/Maple01A/flutter_application_2024"
-  },
-  {
-    title: "家計管理アプリ",
-    description: "ReactとSupabaseを使用したフルースタックアプリケーション。全体のお金を把握して、管理しすくなるように、予想残高機能などを実装しました",
-    image: "/sample3.jpg",
-    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Sentry"],
-    liveLink: "https://original.dcmtvtkah6483.amplifyapp.com",
-    sourceLink: "https://github.com/Maple01A/balance_application_2025"
-  },
-    {
-    title: "学名クイズアプリ",
-    description: "ReactとExpoを使用した学名クイズアプリケーション。",
-    image: "/sample4.png",
-    tech: ["React", "Expo",],
-    liveLink: "https://main.dh1n1x4zj2mqs.amplifyapp.com/",
-    sourceLink: "https://github.com/Maple01A/react_expo_2025"
   },
     {
     title: "クッキングタイマーアプリ",
